@@ -11,6 +11,7 @@ class MilvusCli < Formula
     depends_on "python-setuptools" => :build
     depends_on "python@3.12"
     depends_on "python-tabulate"
+    depends_on "python-click"
 
     resource "pymilvus" do
         url "https://files.pythonhosted.org/packages/60/dc/91b213ea488546b01f58458816c6bb57cb4646c4d2f95113361f98413e7b/pymilvus-2.2.17.tar.gz"
