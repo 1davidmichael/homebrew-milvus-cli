@@ -20,6 +20,11 @@ class MilvusCli < Formula
         sha256 "fadb4bb33a84a8edde45f692f86a0b8c5d309a0aeba56db3564f271df8496347"
     end
 
+    resource "grpcio" do
+        url "https://files.pythonhosted.org/packages/ab/a1/f838646e25402eb750f037cf84c1ada46084717375e44724c89900ee4c7d/grpcio-1.59.3.tar.gz"
+        sha256 "7800f99568a74a06ebdccd419dd1b6e639b477dcaf6da77ea702f8fb14ce5f80"
+    end
+
     def python3
         which("python3.12")
     end
