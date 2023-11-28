@@ -14,6 +14,7 @@ class MilvusCli < Formula
     depends_on "python-click"
     depends_on "python-requests"
     depends_on "numpy"
+    depends_on "pandas"
 
     resource "pymilvus" do
         url "https://files.pythonhosted.org/packages/60/dc/91b213ea488546b01f58458816c6bb57cb4646c4d2f95113361f98413e7b/pymilvus-2.2.17.tar.gz"
