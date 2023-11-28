@@ -10,6 +10,12 @@ class MilvusCli < Formula
 
     depends_on "python-setuptools" => :build
     depends_on "python@3.12"
+    depends_on "python-tabulate"
+
+    resource "pymilvus" do
+        url "https://files.pythonhosted.org/packages/60/dc/91b213ea488546b01f58458816c6bb57cb4646c4d2f95113361f98413e7b/pymilvus-2.2.17.tar.gz"
+        sha256 "fadb4bb33a84a8edde45f692f86a0b8c5d309a0aeba56db3564f271df8496347"
+    end
 
     def python3
         which("python3.12")
