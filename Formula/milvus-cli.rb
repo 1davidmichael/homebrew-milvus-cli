@@ -1,4 +1,4 @@
-class MilvusCLI < Formula
+class MilvusCli < Formula
     include Language::Python::Virtualenv
 
     desc "Milvus CLI"
