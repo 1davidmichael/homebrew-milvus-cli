@@ -14,7 +14,6 @@ class MilvusCli < Formula
     depends_on "python-click"
     depends_on "python-requests"
     depends_on "numpy"
-    depends_on "pandas"
 
     resource "pymilvus" do
         url "https://files.pythonhosted.org/packages/60/dc/91b213ea488546b01f58458816c6bb57cb4646c4d2f95113361f98413e7b/pymilvus-2.2.17.tar.gz"
@@ -24,6 +23,11 @@ class MilvusCli < Formula
     resource "grpcio" do
         url "https://files.pythonhosted.org/packages/ab/a1/f838646e25402eb750f037cf84c1ada46084717375e44724c89900ee4c7d/grpcio-1.59.3.tar.gz"
         sha256 "7800f99568a74a06ebdccd419dd1b6e639b477dcaf6da77ea702f8fb14ce5f80"
+    end
+
+    resource "pandas" do
+        url "https://files.pythonhosted.org/packages/86/ff/662dde2193fc93b8547b073db20472b9676f944d907247a46c9c5bc45bfc/pandas-2.1.3.tar.gz"
+        sha256 "22929f84bca106921917eb73c1521317ddd0a4c71b395bcf767a106e3494209f"
     end
 
     def python3
